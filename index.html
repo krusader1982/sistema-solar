@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sistema solar</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js" ></script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head> 
+    <body>
+      <a-scene>
+            <a-assets>
+               <img id="texture" src="https://cdn.glitch.com/31cf88fd-d7ca-4e0f-86a0-068d99aced09%2FBatmanvSuperman.jpg?v=1591389852288">
+              <img id="sol" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2FSol.jpg?v=1591768545073">
+              <img id="mercurio" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fmercurio.jpg?v=1591809030755">
+              <img id="venus" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fvenus1.jpg?v=1591809838962">
+              <img id="terra" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fterra.jpg?v=1591766121736">
+              <img id="lua" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Flua.jpg?v=1591766863348">
+              <img id="marte" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fmarte.jpg?v=1591809793917">
+              <img id="jupiter" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fjupiter.jpg?v=1591809774122">
+              <img id="saturno" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fsaturno.jpg?v=1591809812169">
+              <img id="urano" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Furano.jpg?v=1591809826832">
+              <img id="netuno" src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Fnetuno.jpg?v=1591809801476">
+            </a-assets>  
+        
+        
+        <a-entity position= "0 500 0"
+                  rotation="270 0 0">
+          <a-camera id="camera">
+              <a-cursor></a-cursor>
+            </a-camera>
+        </a-entity>
+                   
+        <!--SOL-->
+         <a-sphere id="sol_planeta" 
+                   src="#sol" 
+                  position="0 -450 0" 
+                  rotation="0 0 0" 
+                  scale="200 200 200">
+                  <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="1500"
+                               easing="linear"
+                               ></a-animation>
+        </a-sphere>
+        
+         <!--MERCURIO-->
+        <a-entity id="mercurio_planeta" position="0-450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="870"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere src="#mercurio" 
+                                         position="-130 0 0" 
+                                        rotation="0 0 0" 
+                                        scale="5 5 5">
+                                        <a-animation attribute="rotation"
+                                                     to="0 360 0"
+                                                     repeat="indefinite"
+                                                     dur="5000"
+                                                     easing="linear"
+                                                     ></a-animation>
+        </a-sphere></a-entity>
+          
+        
+        <!--VENUS-->
+        <a-entity id="venus_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="2240"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere src="#venus" 
+                                        position="-300 0 0" 
+                                        rotation="0 0 0" 
+                                        scale="5 5 5">
+                                        <a-animation attribute="rotation"
+                                                     to="0 360 0"
+                                                     repeat="indefinite"
+                                                     dur="4000"
+                                                     easing="linear"
+                                                     ></a-animation>
+        </a-sphere></a-entity>
+        
+         <!--TERRA-->
+        <a-entity id="terra_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="3650"
+                               easing="linear"
+                               ></a-animation>
+                                <a-sphere  src="#terra" 
+                                          position="-350 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="10 8 10">
+                                          <a-animation attribute="rotation"
+                                                       to="0 360 0"
+                                                       repeat="indefinite"
+                                                       dur="5000"
+                                                       easing="linear">
+                                                        </a-animation>
+        </a-sphere>
+        
+        
+        
+         <!--LUA-->
+        <a-entity id="lua_planeta" position="-350 0 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="5000"
+                               easing="linear"
+                               ></a-animation>
+          
+                               <a-sphere  src="#lua" 
+                                          position="15 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="2 2 2">
+                                          <a-animation attribute="rotation"
+                                                       to="0 360 0"
+                                                       repeat="indefinite"
+                                                       dur="5000"
+                                                       easing="linear">
+                                          </a-animation>
+                                </a-sphere>
+                </a-entity>
+          </a-entity>
+        
+                    <!--MARTE-->
+        <a-entity id="marte_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="6870"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere  src="#marte" 
+                                          position="-400 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="5 5 5">
+                                          <a-animation attribute="rotation"
+                                                       to="0 360 0"
+                                                       repeat="indefinite"
+                                                       dur="5000"
+                                                       easing="linear"
+                                         ></a-animation>
+          </a-sphere></a-entity>
+        
+        <!--JUPITER-->
+         <a-entity id="jupiter_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="12000"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere  src="#jupiter" 
+                                          position="500 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="70 70 70">
+                              <a-animation attribute="rotation"
+                                           to="0 360 0"
+                                           repeat="indefinite"
+                                           dur="5000"
+                                           easing="linear"
+                                ></a-animation>
+        </a-sphere></a-entity>
+        
+        
+        <!--SATURNO-->
+        <a-entity id="saturno_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="17000"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere  src="#saturno" 
+                                          position="-680 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="58 58 58">
+                              <a-animation attribute="rotation"
+                                           to="0 360 0"
+                                           repeat="indefinite"
+                                           dur="5000"
+                                           easing="linear"
+                               ></a-animation>
+        </a-sphere>
+        
+                                <!--ANEIS SATURNO-->
+                                 <a-sphere  src="#saturno" 
+                                            position="-680 0 0" 
+                                            rotation="0 0 30" 
+                                            scale="80 1 80">
+                  
+        </a-sphere></a-entity>
+            
+         <!--URANO-->
+        <a-entity id="urano_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="20000"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere  src="#urano" 
+                                          position="-800 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="25 25 25">
+                                <a-animation attribute="rotation"
+                                             to="0 360 0"
+                                             repeat="indefinite"
+                                             dur="5000"
+                                             easing="linear"
+                               ></a-animation>
+        </a-sphere></a-entity>
+                
+        <!--NETUNO-->
+        <a-entity id="netuno_planeta" position="0 -450 0">
+          <a-animation attribute="rotation"
+                               to="0 360 0"
+                               repeat="indefinite"
+                               dur="23000"
+                               easing="linear"
+                               ></a-animation>
+                               <a-sphere  src="#netuno" 
+                                          position="-900 0 0" 
+                                          rotation="0 0 0" 
+                                          scale="24 24 24">
+                              <a-animation attribute="rotation"
+                                           to="0 360 0"
+                                           repeat="indefinite"
+                                           dur="5000"
+                                           easing="linear"
+                               ></a-animation>
+        </a-sphere></a-entity>
+        
+            <a-sky src="https://cdn.glitch.com/500475c2-2c0e-4ce0-9f55-fe6b2182d531%2Funiverso1.webp?v=1591765920408"></a-sky>
+          
+        </a-scene>
+    </body>
+   
+</html>
